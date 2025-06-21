@@ -14,11 +14,10 @@ function checkAnswer() {
     const userAnswer = selectedOption.value;
 
     // Step 3: Compare user's answer with the correct answer and update feedback
-    const feedbackElement = document.getElementById("feedback");
     if (userAnswer === correctAnswer) {
-        feedbackElement.textContent = "Correct! Well done.";
+        document.getElementById("feedback").textContent = "Correct! Well done.";
     } else {
-        feedbackElement.textContent = "That's incorrect. Try again!";
+        document.getElementById("feedback").textContent = "That's incorrect. Try again!";
     }
 }
 
